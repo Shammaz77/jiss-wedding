@@ -92,6 +92,10 @@ img {
 	margin: auto;
 	padding-top: 50px;
 }
+.small-txtt{
+	font-size: 5px;
+	margin-top: -6px;
+}
 .box{
 	border: 1px solid #5D533D;
 	padding: 10px;
