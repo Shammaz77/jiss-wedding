@@ -34,7 +34,8 @@ img {
 	background-size: 100% 100% !important;
 	width: 100% !important;
 	background-size: cover;
-	min-height: 100vh;
+	min-height: 100vh !important;
+	position: relative;
 }
 .name-section{
 	padding-top: 50px;
@@ -50,7 +51,7 @@ img {
 }
 .date-time-box{
 	display: flex;
-	width: max-content;
+	width: 70%;
 	margin: auto;
 }
 .small-txt-date{
@@ -67,7 +68,7 @@ img {
 }
 .date{
 	border-right: 1px solid #5D533D;
-	padding-right: 15px;
+	padding-right: 20px;
 }
 .time{
 	padding-left: 20px;
@@ -96,6 +97,7 @@ img {
 	padding: 10px;
 	border-radius: 10px;
 	min-width: 30%;
+	background: #FDF9EE;
 }
 .gallery-txt{
 	font-family: 'Adamina', serif;
@@ -171,32 +173,37 @@ img {
 	width: 100%;
 }
 .vehicle-img{
-	width: 15px;
+	width: 13px;
 }
 .route-box {
-	width: 24%;
-	/* display: flex; */
+	/* width: 24%; */
+	display: flex;
 	align-items: center;
-	background-color: #fff;
+	background-color: #FCF5E4;
 	padding: 7px 6px;
 	border-radius: 5px;
 	margin: auto;
+	
 }
 .routes{
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	display: grid;
+	/* grid-template-columns: repeat(auto-fit,minmax(24%,1fr)); */
+	/* justify-content: space-between; */
+	/* align-items: center; */
+	/* overflow-x: scroll; */
+	grid-auto-flow: column;
+	grid-column-gap: 5px;
 }
 .txt-route{
 	font-size: 10px;
 	text-align: center;
-	/* padding-left: 5px; */
+	padding-left: 2px;
 	font-family: 'Adamina', serif;
 }
 .train-route-dv{
 	font-family: 'Adamina', serif;
-	padding-top: 30px;
+	padding-top: 20px;
 }
 .heading-route{
 	font-size: 15px;
@@ -211,10 +218,12 @@ img {
 	font-family: 'Adamina', serif;
 }
 .row-route{
-	padding-bottom: 25px;
+	/* padding-bottom: 25px;
+	margin-top: -20px; */
+	margin-bottom: 38px;
 }
 .route-map{
-	padding-top: 25px;
+	margin-top: 25px;
 }
 .location-box a:hover{
 	text-decoration: none;
@@ -235,18 +244,22 @@ a{
 	color: #000 !important;
 }
 
-
+.mapp:hover{
+	text-decoration: none 	;
+}
 
 
 
 /* Create an active/current tablink class */
 .routes .route-box.active {
-  /* border: 1px solid #5D533D; */
+  border: 3px solid #5D533D;
 }
 .routes .route-box {
   border: none;
   outline: none;
-  cursor: pointer
+  cursor: pointer;
+	border: 1px solid #fff;
+	text-wrap: nowrap;
 }
 /* Style the tab content */
 .tabcontent {
@@ -258,19 +271,73 @@ a{
 #London{
 	display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+.route-map{
+	border-left: 3px solid #D9D9D9;
+	width: 100%;
+	position: relative;
+	padding-left: 24px;
+	margin-left: 10px;
+}
+.row-route .circle{
+	left: -14px;
+	padding: 7px 7px;
+	position: absolute;
+	border-radius: 50%;
+	background-color: #ffffff;
+}
+.active-circle{
+	border: 1px solid #5D533D;
+}
+.left-space{
+	padding-left: 36px;
+}
+.b{
+	background: #5D533D;
+	padding: 5px;
+	border-radius: 50%;
+}
+.w{
+	background: #ffffff;
+	padding: 5px;
+	border-radius: 50%;
+}
+.txt-littile-biger{
+	font-size: 15px;
+	text-align: center;
+	font-family: 'Adamina', serif;
+}
+.footer p, .footer a{
+	font-size: 13px;
+	color: #5D533D !important;
+	padding: 5px 0px 5px 0px;
+	text-decoration: none !important;
+}
+.footer{
+	position: absolute;
+	bottom: 0px;
+	background: #F8EBC9;
+	left: 20px;
+}
+.select-ride{
+	font-size: 13px;
+	font-family: 'Adamina', serif;
+	padding-top: 20px;
+}
+.button-place{
+	width: 100% !important;
+}
+.place-txtt{
+	font-size: 12px !important;
+	font-family: 'Adamina', serif;
+	font-weight: 500;
+}
+.button-place-main{
+	display: grid;
+	margin-top: 15px;
+	grid-template-columns: repeat(3,32%);
+	grid-column-gap: 10px;
+	grid-row-gap: 15px;
+}
 
 
 
