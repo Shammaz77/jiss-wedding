@@ -51,7 +51,7 @@ img {
 }
 .date-time-box{
 	display: flex;
-	width: 70%;
+	justify-content: center;
 	margin: auto;
 }
 .small-txt-date{
@@ -69,9 +69,11 @@ img {
 .date{
 	border-right: 1px solid #5D533D;
 	padding-right: 20px;
+	width: 40%;
 }
 .time{
 	padding-left: 20px;
+	width: 40%;
 }
 .date .sun{
 	padding-bottom: 10px;
@@ -310,17 +312,19 @@ a{
 	text-align: center;
 	font-family: 'Adamina', serif;
 }
-.footer p, .footer a{
+.footer p{
 	font-size: 13px;
-	color: #5D533D !important;
+	color: #000000 !important;
 	padding: 5px 0px 5px 0px;
+	padding-left: 25px;
 	text-decoration: none !important;
 }
 .footer{
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
+	padding-bottom: 2px;
 	background: #F8EBC9;
-	left: 20px;
+	width: 100%;
 }
 .select-ride{
 	font-size: 13px;
@@ -342,8 +346,23 @@ a{
 	grid-column-gap: 10px;
 	grid-row-gap: 15px;
 }
-
-
+.logo-main{
+	width: 100px;
+	/* filter: drop-shadow(2px 4px 6px black); */
+}
+.img-live{
+	width: 145px;
+	margin: auto;
+	display: table;
+}
+.live-btn{
+	width: max-content;
+	margin: auto;
+	display: table;
+	border: 1px solid #5D533D;
+	padding: 3px 5px !important;
+	border-radius: 10px;
+}
 
 
 
