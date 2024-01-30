@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* font-family: 'Adamina', serif; */
+
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container-main {
+	width: 93%;
+	margin: auto;
+}
+.primary-color{
+	color: #5D533D;
+}
+.primary-bg{
+	background: #5D533D;
+}
+/* =============== */
+.main{
+	background-repeat: no-repeat !important;
+	background-size: 100% 100% !important;
+	width: 100% !important;
+	background-size: cover;
+	min-height: 100vh;
+}
+.name-section{
+	padding-top: 50px;
+}
+.name-txt{
+	font-family: 'Redressed', 'sedan';
+	font-size: 50px !important;
+	font-weight: 600;
+}
+.name-txt span{
+	font-size: 22px !important;
+	font-weight: 300;
+}
+.date-time-box{
+	display: flex;
+	width: max-content;
+	margin: auto;
+}
+.small-txt-date{
+	font-size: 14px;
+	font-family: 'Adamina', serif;
+}
+.clock{
+	width: 40px;
+	margin: auto;
+	display: table;
+}
+.date-time-box{
+	padding-top: 30px;
+}
+.date{
+	border-right: 1px solid #5D533D;
+	padding-right: 15px;
+}
+.time{
+	padding-left: 20px;
+}
+.date .sun{
+	padding-bottom: 10px;
+}
+.date .feb{
+	padding-top: 10px;
+}
+.time-txt{
+	padding-top: 15px;
+}
+.time-c{
+	padding-bottom: 15px;
+}
+.boxes{
+	display: flex;
+	justify-content: space-between;
+	width: 95%;
+	margin: auto;
+	padding-top: 50px;
+}
+.box{
+	border: 1px solid #5D533D;
+	padding: 10px;
+	border-radius: 10px;
+	min-width: 30%;
+}
+.gallery-txt{
+	font-family: 'Adamina', serif;
+	font-size: 13px;
+}
+.box i{
+	font-size: 30px;
+	text-align: center;
+	margin: auto;
+	width: max-content;
+	display: table;
+	padding-bottom: 3px;
+}
+.txt-main{
+	font-size: 13px;
+	font-family: 'Adamina', serif;
+}
+.text-box{
+	padding: 23px 0px;
+}
+/* location page  */
+.location-txt{
+
+}
+.top-nav{
+	display: flex;
+	align-items: center;
+	padding-top: 20px;
+	font-family: 'Adamina', serif;
+}
+.top-nav i{
+	background: #fff;
+	padding: 2px 8px;
+	margin-right: 20px;
+	font-size: 20px;
+	border-radius: 50%;
+}
+.location-box{
+	background: #fff;
+	filter: drop-shadow(0px 2px 9px rgba(0, 0, 0, 0.25));
+	padding: 12px;
+	border-radius: 10px;
+	width: 48%;
+	font-family: 'Adamina', serif;
+}
+.place-txt{
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+.journey-txt{
+	font-size: 12px !important;
+	background: #929A77;
+	color: #fff;
+	width: 100% !important;
+	outline: none !important;
+	border: none !important;
+}
+.journey-txt:hover{
+
+}
+.location-main{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.back{
+	display: contents;
+}
+.back i{
+	color: #000 !important;
+}
+.routes{
+	width: 100%;
+}
+.vehicle-img{
+	width: 15px;
+}
+.route-box {
+	width: 24%;
+	/* display: flex; */
+	align-items: center;
+	background-color: #fff;
+	padding: 7px 6px;
+	border-radius: 5px;
+	margin: auto;
+}
+.routes{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.txt-route{
+	font-size: 10px;
+	text-align: center;
+	/* padding-left: 5px; */
+	font-family: 'Adamina', serif;
+}
+.train-route-dv{
+	font-family: 'Adamina', serif;
+	padding-top: 30px;
+}
+.heading-route{
+	font-size: 15px;
+}
+.timeline-route-head{
+	font-size: 14px;
+	font-weight: 500;
+	padding-bottom: 5px;
+}
+.timeline-route-sub{
+	font-size: 11px;
+	font-family: 'Adamina', serif;
+}
+.row-route{
+	padding-bottom: 25px;
+}
+.route-map{
+	padding-top: 25px;
+}
+.location-box a:hover{
+	text-decoration: none;
+	color: #fff !important;
+}
+.box a:hover{
+	text-decoration: none !important;
+	color: #fff !important;
+}
+.route-box a:hover{
+	text-decoration: none !important;
+	color: #fff !important;
+}
+.txt-route:hover{
+	color: #000 !important;
+}
+a{
+	color: #000 !important;
+}
+
+
+
+
+
+/* Create an active/current tablink class */
+.routes .route-box.active {
+  /* border: 1px solid #5D533D; */
+}
+.routes .route-box {
+  border: none;
+  outline: none;
+  cursor: pointer
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+#London{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

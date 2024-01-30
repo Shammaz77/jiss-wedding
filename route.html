@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" integrity="sha512-dUOcWaHA4sUKJgO7lxAQ0ugZiWjiDraYNeNJeRKGOIpEq4vroj1DpKcS3jP0K4Js4v6bXk31AAxAxaYt3Oi9xw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<div class="main" style="background: url('./images/iPhone\ 14\ Plus\ -\ 1.png');">
+		<div class="container-main">
+			<div class="row">
+				<div class="col-12">
+					<div class="top-nav">
+						<a class="back" href="./index.html">
+							<i class="ri-arrow-left-s-line"></i>
+						</a>
+						<p class="location-txt mb-0 primary-color">Location</p>
+					</div>
+				</div>
+				<div class="col-12 mt-3">
+					<div class="routes">
+						<div class="route-box" onclick="openCity(event, 'London')">
+							<!-- <img src="./images/a29582686b978233c496431ccba310e3.png" class="vehicle-img" alt=""> -->
+							<p class="txt-route mb-0">Train route</p>
+						</div>
+						<div class="route-box" onclick="openCity(event, 'Paris')">
+							<!-- <img src="./images/a29582686b978233c496431ccba310e3.png" class="vehicle-img" alt=""> -->
+							<p class="txt-route mb-0">Ksrtc route</p>
+						</div>
+						<div class="route-box" onclick="openCity(event, 'Tokyo')">
+							<!-- <img src="./images/a29582686b978233c496431ccba310e3.png" class="vehicle-img" alt=""> -->
+							<p class="txt-route mb-0">Private route</p>
+						</div>
+						<div class="route-box">
+							<a href="https://maps.app.goo.gl/P8UhyYCFWgh2qMQC8"><p class="txt-route mb-0">Map</p></a>
+							<!-- <img src="./images/a29582686b978233c496431ccba310e3.png" class="vehicle-img" alt=""> -->
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-12 tabcontent" id="London">
+					<div class="train-route-dv">
+						<p class="heading-route mb-0 text-center">Train route</p>
+						<div class="route-map">
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Your are starting from (kkms)</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0"> At Thrissur railway station</p>
+								<p class="timeline-route-sub mb-0"> Take Auto rickshaw   OR   Bus to Vadakke Stand</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Vadakke Stand (Private Bus Stand)</p>
+								<p class="timeline-route-sub mb-0">Board a bus heading towards Marthakkara, Thrikkur, Ponnukkara Bus  from Vadakke Stand to Mary Immaculate Church</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Mary Immaculate Church </p>
+								<p class="timeline-route-sub mb-0">Stay on the bus until you reach Marathakkara Mary Immaculate Church. The church will be on your left-hand side. You have reached your destination.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- bus  -->
+				<div class="col-12 tabcontent" id="Paris">
+					<div class="train-route-dv">
+						<p class="heading-route mb-0 text-center">Bus</p>
+						<div class="route-map">
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Your are starting from (kkms)</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0"> At Thrissur railway station</p>
+								<p class="timeline-route-sub mb-0"> Take Auto rickshaw   OR   Bus to Vadakke Stand</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Vadakke Stand (Private Bus Stand)</p>
+								<p class="timeline-route-sub mb-0">Take Marthakkara, Thrikkur, Ponnukkara Bus  from Vadakke Stand to Mary Immaculate Church  </p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Marathakkara, Thrikkur, Ponnukkara Bus </p>
+								<p class="timeline-route-sub mb-0">Stay on the bus until you reach Marathakkara Mary Immaculate Church: The church will be on your left-hand side.</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Mary Immaculate Church </p>
+								<p class="timeline-route-sub mb-0">Stay on the bus until you reach Marathakkara Mary Immaculate Church: The church will be on your left-hand side.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Private route  -->
+				<div class="col-12 tabcontent" id="Tokyo">
+					<div class="train-route-dv">
+						<p class="heading-route mb-0 text-center">Private route</p>
+						<div class="route-map">
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Your are starting from (kkms)</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">At Thrissur ksrtc Statnd</p>
+								<p class="timeline-route-sub mb-0"> Take Auto rickshaw   OR   Bus to Vadakke Stand</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Vadakke Stand (Private Bus Stand)</p>
+								<p class="timeline-route-sub mb-0">Board a bus heading towards Marthakkara, Thrikkur, Ponnukkara Bus  from Vadakke Stand to Mary Immaculate Church</p>
+							</div>
+							<div class="row-route">
+								<p class="timeline-route-head mb-0">Mary Immaculate Church </p>
+								<p class="timeline-route-sub mb-0">Stay on the bus until you reach Marathakkara Mary Immaculate Church. The church will be on your left-hand side. You have reached your destination.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+		function openCity(evt, cityName) {
+			// Declare all variables
+			var i, tabcontent, tablinks;
+	
+			// Get all elements with class="tabcontent" and hide them
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+	
+			// Get all elements with class="tablinks" and remove the class "active"
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].classList.remove("active");
+			}
+	
+			// Show the current tab, and add an "active" class to the button that opened the tab
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.classList.add("active");
+		}
+	</script>
+	
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</body>
+</html>
